@@ -22,3 +22,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT * FROM (
+    SELECT * FROM tbl1 
+    ORDER BY C14
+) WHERE ROWNUM < 6;

@@ -22,3 +22,10 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+
+-- SELECT * FROM (
+--     SELECT * FROM tbl1 
+--     ORDER BY C14
+-- ) OFFSET 0 ROWS FETCH NEXT 5 ROWS ONLY;
+
+SELECT * FROM (SELECT * FROM tbl1 ORDER BY C14) LIMIT 5;
